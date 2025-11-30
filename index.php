@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
 $filename = "cauhoi.txt";
@@ -54,5 +55,53 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <?php if ($score !== null): ?>
         <h3>Kết quả: <?= $score ?>/<?= count($questions) ?></h3>
     <?php endif; ?>
+=======
+<?php include "flowers.php"; ?>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Các Loại Hoa</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        img {
+            max-width: 100px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+<h1>Các Loại Hoa</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Tên hoa</th>
+            <th>Ảnh</th>
+            <th>Mô tả</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach ($flowers as $f): ?>
+            <tr>
+                <td><?= $f['name'] ?></td>
+                <td><img src="<?= $f['image'] ?>" alt="<?= $f['name'] ?>"></td>
+                <td><?= $f['desc'] ?></td>
+            </tr>
+        <?php endforeach; ?>
+    </tbody>
+</table>
+>>>>>>> bd5f4af (Thêm code mới từ Thuchanhweb1)
 </body>
 </html>

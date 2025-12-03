@@ -1,1 +1,1 @@
-các bài còn lại em để trong các nhánh khác
+bài thực hành em để trong các nhánh ạ
